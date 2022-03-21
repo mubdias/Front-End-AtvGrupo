@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  --cor-fundo-desconto: #1cd1b0;
+  --cor-fundo-destaque: #00669f;
+  --cor-fundo-menu: #001d2d;
+  --cor-fundo-card: #f3f3f3;
+  --cor-fonte-clara: #f3f3f3;
+  --cor-fonte-escura: #000000;
+  --cor-fonte-titulo: #333333;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-fonte-clara);
+}
+
+header h2 {
+  background-color: var(--cor-fundo-desconto);
+  width: 100%;
+  height: 38px;
+  font-size: 1.5rem;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  color: var(--cor-fonte-escura);
+}
+
+.herois {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--cor-fundo-destaque);
+  width: 100%;
+  height: 120px;
+  padding: 48px 10px 10px 10px;
+}
+
+.herois img {
+  height: 60px;
+}
+
+.herois h1 {
+  font-size: 4rem;
+}
+
+.menu ul {
+  width: 100%;
+  height: 40px;
+  padding-right: 20px;
+  background-color: var(--cor-fundo-menu);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 1.6rem;
+  box-shadow: 0px 7px 5px black;
+  color: var(--cor-fonte-clara);
+}
+
+.card_container {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 86.11px 20px 151px 20px;
+}
+
+.sobrecard {
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: var(--cor-fundo-card);
+  width: 320px;
+  height: 617.8px;
+  position: relative;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  box-shadow: 6px 8px 5px rgb(0 0 0 / 25%);
+}
+
+.card__heart {
+  position: absolute;
+  left: 23.7px;
+  top: 17.92px;
+  cursor: pointer;
+}
+
+.card__background {
+  height: 217.8px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__batman {
+  background-image: url(../img/batman_background.png);
+}
+
+.card__arlequina {
+  background-image: url(../img/arlequina_background.jpg);
+}
+
+.card__mulhermaravilha {
+  background-image: url(../img/mulhermaravilha_background.png);
+}
+
+.card__superman {
+  background-image: url(../img/superman_background.png);
+}
+
+.card__perfil {
+  width: 135px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150.31px;
+}
+
+.card__conteudo {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__conteudo h2 {
+  padding-top: 83.51px;
+  padding-bottom: 15px;
+  font-size: 25px;
+}
+
+.card__conteudo p {
+  text-align: justify;
+  margin-left: 36px;
+  margin-right: 36px;
+  font-size: 16px;
+  height: 185px;
+}
+
+.card__botao {
+  width: 145.34px;
+  height: 54.76px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: var(--cor-fundo-destaque);
+  color: var(--cor-fonte-clara);
+  text-align: center;
+  padding-top: 17px;
+  font-size: 15px;
+}
+
+.card__adicionar {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
+  background-color: var(--cor-fundo-destaque);
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 10px;
+  left: 93%;
+  top: 50%;
+}
+
+footer {
+  background-color: var(--cor-fundo-destaque);
+  width: 100%;
+  height: 51px;
+  color: var(--cor-fonte-clara);
+  padding: 16px 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-top: 110px;
+}
+
+footer ul {
+  font-size: 1.3rem;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--cor-fonte-clara);
+}
+
+.github img {
+  width: 120px;
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 8px;
+  }
+  .sobrecard {
+    width: 40%;
+  }
+  .card__adicionar {
+    left: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  .sobrecard {
+    width: 90%;
+  }
+  .card__adicionar {
+    left: 80%;
+  }
+  .github img {
+    width: 90px;
+  }
+}
