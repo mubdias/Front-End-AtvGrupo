@@ -86,8 +86,8 @@ main {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 72px;
+  font-size: 2.5rem;
+  line-height: 45px;
   text-align: center;
   color: #fbfffd;
 }
@@ -96,7 +96,7 @@ main {
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.5rem;
   line-height: 14px;
   color: #ffffff;
 }
@@ -120,17 +120,79 @@ form {
 .txtinput__config {
   display: flex;
   flex-direction: column;
+  margin: 25px 0px 0px 15px;
+  border: none;
+}
+
+.txtinput__config [type="text"],
+[type="date"] {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.txtinput__config [type="text"] {
+  margin-bottom: 15px;
+}
+
+.txtinput__config [type="date"] {
+  margin-bottom: 25px;
+  text-indent: 5px;
+}
+
+.txtinput__config [for="name"],
+[for="date"],
+[for="especie"],
+[for="upload"],
+[for="poderes"],
+[for="indole"] {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .checkbox__config {
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
+  margin: 25px 0px 0px 15px;
+  border: none;
 }
 
-input {
+.checkbox__config [id="upload"] {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 12px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.checkbox__config [id="especie"] {
   width: 250px;
   height: 40px;
+  margin-bottom: 15px;
   border-radius: 10px;
+}
+
+.checkbox__config [for="upload"] {
+  margin-bottom: 10px;
+}
+
+.checkbox__config [type="checkbox"],
+[type="radio"] {
+  width: 24px;
+  height: 20px;
+}
+
+input [id="upload"] {
+  width: 223px;
+  height: 32px;
+  border-radius: 5px;
 }
 
 .formulario {
@@ -155,12 +217,13 @@ input {
   flex-direction: column;
 }
 
-.formulario textarea {
-  width: 100%;
-  height: 251px;
-  margin-bottom: 47px;
+.describ__config [id="Descricao"] {
+  width: 250px;
+  height: 200px;
+  margin-bottom: 15px;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
   font-family: Karia, Arial, Helvetica, sans-serif;
   outline: none;
   resize: none;
@@ -171,7 +234,7 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: center;
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 button {
