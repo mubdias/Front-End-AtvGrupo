@@ -27,7 +27,7 @@
                     <a href="index.html">Home</a>
                     <a href="contato.html">Contato</a>
                     <a href="registro.html">Registro</a>
-                    <a href="login.html">Entrar</a>
+                    <a href="login.html">Login</a>
                     <a href="formulario.html">Formulário</a>
                 </ul>
             </nav>
@@ -41,42 +41,34 @@
             </div>
             <div>
                 <form action="/POST">
-                    <fieldset class="txtinput__config" >
+                    <fieldset class="txtinput__config">
                         <label for="name" required>*Nome</label>
                         <input type="text" name="Nome" id="nome">
+                        <label for="date">Data de Nascimento</label>
+                        <input type="date" name="Data" id="data-nascimento">
+                        <div>
+                            <label for="Descricao" placeholder="Descrição">
+                                <textarea name="Descricao" id="Descricao" cols="30" rows="10"
+                                    placeholder="Descrição"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
                         <label for="especie" required>*Espécie</label>
                         <select name="especie" id="especie">Reino/Espécie
-                          
                             <option value="">Humana</option>
                             <option value="">Extraterrestre</option>
                             <option value="">Reino Animal</option>
                         </select>
-                    </fieldset>
-                    <fieldset>
-                       
-                            <label for="date">Data de Nascimento</label>
-                            <input type="date" name="Data" id="data-nascimento">
-                            <label for="upload">Escolher foto</label>
-                            <input type="file" name="select" id="upload">
-                        
-                    </fieldset>
-                    <fieldset>
-                        <div>
-                            <label for="Descricao" placeholder="Descrição">
-                            <textarea name="Descricao" id="Descricao" cols="30" rows="10" placeholder="Descrição"></textarea>
-                        </div>
-                        <fieldset>
-                            <label for="poderes">Poderes</label>
-                            <input type="checkbox" name="Poderes" id="poderes">Telepatia</input>
-                            <input type="checkbox" name="Poderes" id="poderes">Voar</input>
-                            <input type="checkbox" name="Poderes" id="poderes">Super-inteligência</input>
-                            <input type="checkbox" name="Poderes" id="poderes">Super-força</input>
-                        </fieldset>
-                        <fieldset>
-                            <label for="indole">Tipo de Personagem</label>
-                            <input type="checkbox" name="personagem" id="indole"> Herói/Heroína </input>
-                            <input type="checkbox" name="personagem" id="indole"> Vilã/Vilão </input>
-                        </fieldset>
+                        <label for="upload">Escolher foto</label>
+                        <input type="file" name="select" id="upload">
+                        <label for="poderes">Poderes</label>
+                        <input type="checkbox" name="Poderes" id="poderes">Telepatia</input>
+                        <input type="checkbox" name="Poderes" id="poderes">Voar</input>
+                        <input type="checkbox" name="Poderes" id="poderes">Super-inteligência</input>
+                        <input type="checkbox" name="Poderes" id="poderes">Super-força</input>
+                        <label for="indole">Tipo de Personagem</label>
+                        <input type="checkbox" name="personagem" id="indole"> Herói/Heroína </input>
+                        <input type="checkbox" name="personagem" id="indole"> Vilã/Vilão </input>
                     </fieldset>
                 </form>
 
