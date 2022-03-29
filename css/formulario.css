@@ -74,11 +74,12 @@ header h2 {
 }
 
 main {
+  
   width: 100%;
   height: 600px;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -228,6 +229,40 @@ input [id="upload"] {
   outline: none;
   resize: none;
 }
+.checkbox_div{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.linha{
+  width: 80%;
+  margin-top: 1rem;
+ 
+}
+.checkbox_align{
+  padding-top: 1rem;
+}
+.checkbox_align2{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #ffffff;
+  font-size: larger;
+}
+.poderes{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+
+}
+.indole{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
 
 .botao {
   width: 100%;
@@ -235,6 +270,7 @@ input [id="upload"] {
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
+
 }
 
 button {
@@ -243,8 +279,11 @@ button {
   border: none;
   font-family: Karia, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
+  font-weight: bold;
   border-radius: 50px;
   margin-bottom: 20.21px;
+  background-color: #1CD1B0;
+  ;
 }
 
 footer {

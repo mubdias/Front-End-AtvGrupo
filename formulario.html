@@ -51,22 +51,46 @@
                         </div>
                     </fieldset>
                     <fieldset class="checkbox__config">
-                        <label for="especie" required>*Espécie</label>
-                        <select name="especie" id="especie">Reino/Espécie
-                            <option value="">Humana</option>
-                            <option value="">Extraterrestre</option>
-                            <option value="">Reino Animal</option>
-                        </select>
-                        <label for="upload">Escolher foto</label>
-                        <input type="file" name="select" id="upload">
-                        <label for="poderes">Poderes</label>
-                        <input type="checkbox" name="Poderes" id="poderes">Telepatia</input>
-                        <input type="checkbox" name="Poderes" id="poderes">Voar</input>
-                        <input type="checkbox" name="Poderes" id="poderes">Super-inteligência</input>
-                        <input type="checkbox" name="Poderes" id="poderes">Super-força</input>
-                        <label for="indole">Tipo de Personagem</label>
-                        <input type="radio" name="personagem" id="indole"> Herói/Heroína </input>
-                        <input type="radio" name="personagem" id="indole"> Vilã/Vilão </input>
+                        <div class="checkbox_div">
+                            <label for="especie" required>*Espécie</label>
+                            <select name="especie" id="especie">Reino/Espécie
+                                <option value="">Humana</option>
+                                <option value="">Extraterrestre</option>
+                                <option value="">Reino Animal</option>
+                            </select>
+                        </div>
+                        <div class="checkbox_div">
+                            <label for="upload">Escolher foto</label>
+                            <input type="file" name="select" id="upload">
+                        </div>
+                        <div class="checkbox_align2">
+                            <label for="poderes">Poderes</label>
+                            <div class="poderes">
+                                <input type="checkbox" name="Poderes" id="poderes">Telepatia</input>
+                            </div>
+                            <div class="poderes">
+                                <input type="checkbox" name="Poderes" id="poderes">Voar</input>
+                            </div>
+                            <div class="poderes">
+                                <input type="checkbox" name="Poderes" id="poderes">Super-inteligência</input>
+                            </div>
+                            <div class="poderes">
+                                <input type="checkbox" name="Poderes" id="poderes">Super-força</input>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <hr>
+                        </div>
+                        <div class="checkbox_align2">
+                            <label for="indole">Tipo de Personagem</label>
+
+                            <div class="indole">
+                                <input type="radio" name="personagem" id="indole"> Herói/Heroína </input>
+                            </div>
+                            <div class="indole">
+                                <input type="radio" name="personagem" id="indole"> Vilã/Vilão </input>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
 
@@ -79,7 +103,7 @@
     <footer>
         <ul>
             <li>Todos os direitos reservados a Front-end I</li>
-            <li>Desenvolvido por Everton Barros de Moraes, Naickely, Murilo Barberini Dias e Paulo Xavier.</li>
+            <li>Desenvolvido por Everton Barros de Moraes, Naickely Monteiro, Murilo Barberini Dias e Paulo Xavier.</li>
         </ul>
         <div class="github">
             <a href="https://github.com/mubdias/Front-End-AtvGrupo" target="_blank"><img src="img/github.png"
