@@ -229,19 +229,23 @@ input [id="upload"] {
   outline: none;
   resize: none;
 }
+
 .checkbox_div{
   display: flex;
   flex-direction: column;
  
 }
+
 .linha{
   width: 80%;
   margin-top: 1rem;
  
 }
+
 .checkbox_align{
   padding-top: 1rem;
 }
+
 .checkbox_align2{
   display: flex;
   flex-direction: column;
@@ -249,6 +253,13 @@ input [id="upload"] {
   color: #ffffff;
   font-size: larger;
 }
+
+.checkbox_align2 [for="indole"] {
+  border-top: 1px solid rgb(206, 204, 204);
+  border-spacing: 25px;
+  padding-top: 10px;
+}
+
 .poderes{
   display: flex;
   flex-direction: row;
@@ -256,12 +267,12 @@ input [id="upload"] {
   align-items: center;
 
 }
+
 .indole{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-
 }
 
 .botao {
@@ -269,8 +280,7 @@ input [id="upload"] {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
-
+  margin-top: 15px;
 }
 
 button {
